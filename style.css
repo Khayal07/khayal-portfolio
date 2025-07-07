@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    font-family: tah;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #1a1a1a;
+    color: #fff;
+    position: fixed;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.sidebar nav a {
+    display: block;
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.sidebar nav a.active {
+    color: #ffc107;
+}
+
+.sidebar .footer {
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+}
+
+.sidebar .social a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 250px;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.overlay h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.overlay .btn {
+    background: #ffc107;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.about, .projects, .services, .blog, .contact {
+    padding: 50px;
+    text-align: center;
+}
+
+.project-item {
+    margin-bottom: 30px;
+}
+
+.project-item img {
+    max-width: 100%;
+}
+
+.card-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-images img {
+    max-width: 45%;
+    height: auto;
+}
+
+.services .service-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    flex: 1 1 300px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.blog .blog-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-item {
+    flex: 1 1 300px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.blog-item .btn {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.contact .contact-info {
+    margin-bottom: 30px;
+}
+
+.contact .contact-info a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.contact .social {
+    margin-top: 20px;
+}
+
+.contact .social a {
+    color: #ffc107;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form button {
+    background: #ffc107;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .card-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-images img {
+        max-width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .service-item,
+    .blog-item {
+        flex: 1 1 100%;
+    }
+}
